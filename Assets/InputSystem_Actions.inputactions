@@ -45,6 +45,16 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "DeplacerBalle",
+                    "type": "Button",
+                    "id": "6195730f-9faa-4c1e-bbfb-9fef9132edec",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -245,6 +255,17 @@
                     "action": "ZoomerCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "c2aeb9a9-0bd2-4f2b-b2cb-b2e5bd1e433a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DeplacerBalle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
