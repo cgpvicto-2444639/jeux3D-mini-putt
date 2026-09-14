@@ -28,7 +28,6 @@ public class GestionnaireCamera : MonoBehaviour
 
     private void Start()
     {
-        // On commence par cibler la Cible Camera (vue libre)
         ActiverCameraCible();
     }
 

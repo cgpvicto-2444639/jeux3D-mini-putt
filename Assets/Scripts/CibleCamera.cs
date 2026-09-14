@@ -36,7 +36,6 @@ public class CibleCamera : MonoBehaviour
     [SerializeField, Tooltip("La caméra qui suit la cible")]
     private CinemachineCamera cameraGeree;
 
-    // Variables privées pour la gestion du déplacement
     /// <summary>
     /// Le deplacement actuel de la caméra
     /// </summary>

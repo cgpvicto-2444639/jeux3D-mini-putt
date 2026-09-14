@@ -9,7 +9,6 @@ public class SuiviPositionBalle : MonoBehaviour
     {
         if (cibleBalle != null)
         {
-            // Copie uniquement la position, la rotation de cet objet reste fixe
             transform.position = cibleBalle.position;
         }
     }

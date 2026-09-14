@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class DeplacementBalle : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Rigidbody rb;
     public float forceMagnitude = 20f;
     void Start()
