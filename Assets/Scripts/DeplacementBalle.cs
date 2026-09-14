@@ -6,8 +6,6 @@ public class DeplacementBalle : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Rigidbody rb;
     public float forceMagnitude = 20f;
-    private bool doitLancer = false;
-
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -24,6 +22,11 @@ public class DeplacementBalle : MonoBehaviour
     {
         if (rb != null)
             rb.AddForce(Vector3.right * forceMagnitude);
+
+        if(GestionnaireCamera.Instance != null)
+        {
+            GestionnaireCamera.Instance.ActiverCameraBalle();
+        }
 
     }
 }
