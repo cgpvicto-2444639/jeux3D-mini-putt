@@ -132,14 +132,15 @@ public class CibleCamera : MonoBehaviour
     {
         if (deplacement.sqrMagnitude > 0.0f)
         {
-            Vector3 prochainePosition = transform.position -
+            Vector3 ciblePosition = transform.position -
                 transform.right * deplacement.x * Time.deltaTime -
                 transform.forward * deplacement.y * Time.deltaTime;
-            prochainePosition = Vector3.Scale(prochainePosition, new Vector3(1.0f, 0.0f, 1.0f));
+            ciblePosition = Vector3.Scale(ciblePosition, new Vector3(1.0f, 0.0f, 1.0f));
 
-            if (volumeCamera.bounds.Contains(prochainePosition))
+            if (volumeCamera.bounds.Contains(ciblePosition))
             {
-                transform.position = prochainePosition;
+                // Lissage du déplacement
+                transform.position = Vector3.Lerp(transform.position, ciblePosition, Time.deltaTime * 10f);
             }
         }
     }
